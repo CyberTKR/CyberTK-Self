@@ -1,10 +1,9 @@
-# TK10arti5
-CyberTKBOT
-BotProtect
+# Selfbot
+CyberTK-Selfbot
 
 Cybertk Bot scripti'dir.
 
-Grup savunmasi amacli kullanilmalidir.
+Kişisel amacli kullanim içindir..
 
 Baska herhangi bir amacla kullanilmak icin duzenlenmesinden ve,
 kullanilmasindan cybertk sorumlu degildir.

@@ -10,7 +10,7 @@ import profile
 import client
 import wikipedia
 import requests
-from gtts import gTTS
+#from gtts import gTTS
 from CYBERTK.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 from threading import Thread
 
 cl = CYBERTK.LINE() #Bot Utama
-cl.login(qr=True)
+cl.login(token="Eok8Hp2ZXEh2dpywXFUe.AMA2S4NsCfl3YkWl3cZUFG.5+4i6VJ0y0KIJzExLoYfs/EYKVWxtD49XhIXBVpz6ro=")
 cl.loginResult()
 
 kc = kk = ki = kl = cl
@@ -2857,23 +2857,23 @@ def bot(op):
                 else:
                     pass
 #----------------------------------
-            elif "Leavegroup " in msg.text.split():
-                ng = msg.text.split().replace("Leavegroup ","")
-                gid = cl.getGroupIdsJoined()
-                if msg.from_ in Creator:
-                    for i in gid:
-                        h = cl.getGroup(i).name
-                if h == ng:
-                cl.sendText(i,"Bot di paksa keluar oleh owner!")
-                cl.leaveGroup(i)
-                ki.leaveGroup(i)
-                kk.leaveGroup(i)
-                kc.leaveGroup(i)
-                cl.sendText(msg.to,"Success left ["+ h +"] group")
-            else:
-                pass
-        else:
-            cl.sendText(msg.to,"Khusus Creator/Admin")
+            #elif "Leavegroup " in msg.text.split():
+                #ng = msg.text.split().replace("Leavegroup ","")
+                #gid = cl.getGroupIdsJoined()
+                #if msg.from_ in Creator:
+                    #for i in gid:
+                        #h = cl.getGroup(i).name
+                #if h == ng:
+                #cl.sendText(i,"Bot di paksa keluar oleh owner!")
+                #cl.leaveGroup(i)
+                #ki.leaveGroup(i)
+                #kk.leaveGroup(i)
+                #kc.leaveGroup(i)
+                #cl.sendText(msg.to,"Success left ["+ h +"] group")
+            #else:
+                #pass
+        #else:
+            #cl.sendText(msg.to,"Khusus Creator/Admin")
 #----------------------------------
             elif "Getcontact " in msg.text:
               if msg.from_ in admin:

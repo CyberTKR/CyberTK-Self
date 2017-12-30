@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import LINETCR
+import CYBERTK
 import goslate
 import requests
 import urllib
@@ -11,13 +11,13 @@ import client
 import wikipedia
 import requests
 from gtts import gTTS
-from LINETCR.lib.curve.ttypes import *
+from CYBERTK.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 from bs4 import BeautifulSoup
 from threading import Thread
 
-cl = LINETCR.LINE() #Bot Utama
+cl = CYBERTK.LINE() #Bot Utama
 cl.login(qr=True)
 cl.loginResult()
 

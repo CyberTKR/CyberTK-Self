@@ -149,7 +149,7 @@ botMessage ="""
 ════════════════
 ║> nĸ [naмe]
 ║> vĸ [naмe]
-║> nυĸe
+║> Fuck
 ║> lυrĸιng > lυrĸerѕ
 ║> тeѕт
 ║> reѕpon
@@ -2074,9 +2074,9 @@ def bot(op):
                                      nm4 += [nama[l]]
                                  mention(msg.to, nm4)
                               cnt = Message()
-                              cnt.text = "Hasil Tag : "+str(jml)
+                              cnt.text = "Tag Number : "+str(jml)
                               cnt.to = msg.to
-                              cl.sendText(msg.to,"TAGALL SUCCESS")
+                              cl.sendText(msg.to,"Tag Only..")
                               cl.sendMessage(cnt)
 #-----------------------------------------------
 
@@ -2405,7 +2405,7 @@ def bot(op):
                    except:
                       pass
 #-----------------------------------------------
-            elif msg.text.lower() == 'crash':
+            elif msg.text.lower() == 'Crsh':
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': "ua7fb5762d5066629323d113e1266e8ca',"}
                 cl.sendMessage(msg)
@@ -3519,21 +3519,21 @@ def bot(op):
 
 #------------------------------
 #--------------------------------------
-            elif msg.text in ["hmm"]:
-			if msg.from_ in admin:
-					ki.sendText(msg.to,"Waduh Anda Batuk Segeralah Minum Baygon Penyakit Ilang Nyawa Melayang")
-            elif msg.text in ["naena"]:
-				if msg.from_ in admin:
-					ki.sendText(msg.to,"malik mana ya , gw jadi kangen naena sama dia")
-            elif msg.text in ["Lucu"]:
-				if msg.from_ in admin:
-					ki.sendText(msg.to,"Lucu Banget Sih")
-					kk.sendText(msg.to,"Gemes Deh")
-					kc.sendText(msg.to,"Wkwkwkwkkw")
-            elif msg.text in ["welcome"]:
-				if msg.from_ in admin:
-					ki.sendText(msg.to,"Selamat datang di Group")
-					kk.sendText(msg.to,"Jangan nakal ok!")
+            #elif msg.text in ["hmm"]:
+			# msg.from_ in admin:
+					#ki.sendText(msg.to,"Waduh Anda Batuk Segeralah Minum Baygon Penyakit Ilang Nyawa Melayang")
+            #elif msg.text in ["naena"]:
+				#if msg.from_ in admin:
+					#ki.sendText(msg.to,"malik mana ya , gw jadi kangen naena sama dia")
+            #elif msg.text in ["Lucu"]:
+				#if msg.from_ in admin:
+					#ki.sendText(msg.to,"Lucu Banget Sih")
+					#kk.sendText(msg.to,"Gemes Deh")
+					#kc.sendText(msg.to,"Wkwkwkwkkw")
+            #elif msg.text in ["welcome"]:
+				#if msg.from_ in admin:
+					#ki.sendText(msg.to,"Selamat datang di Group")
+					#kk.sendText(msg.to,"Jangan nakal ok!")
 #-----------------------------------------------
 #-------------- Add Friends ------------
             elif "/botadd @" in msg.text:

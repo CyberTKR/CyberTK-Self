@@ -13,7 +13,7 @@
 -   Instagram account : http://instagram.com/_aquariusman
 -   Youtube channnel : https://m.youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw
 
-- Commandlist;
+# Commandlist;
 - pkg install python2 
 - pkg install git
 - git clone https://github.com/CyberTKR/CyberTK-Self

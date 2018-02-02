@@ -461,7 +461,7 @@ class LINE:
 
       prof = self.getProfile()
 
-      print("\n[Ȼyber | τK  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т\n")
+      print("\n==[̲̅C̲̅][̲̅Y̲̅][̲̅B̲̅][̲̅E̲̅][̲̅R̲̅][̲̅T̲̅][̲̅K̲̅]==\n")
       print("Mid -> " + prof.mid)
       print("Name -> " + prof.displayName)
       print("Token -> " + self.authToken)

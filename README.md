@@ -1,7 +1,7 @@
 <h1>[̲̅C̲̅][̲̅o̲̅][̲̅m̲̅][̲̅m̲̅][̲̅a̲̅][̲̅n̲̅][̲̅d̲̅][̲̅l̲̅][̲̅i̲̅][̲̅s̲̅][̲̅t̲̅][̲̅;̲̅]</h1>
 </br><b>✦pkg install python2 </b>
 </br><b>✦pkg install git</b>
-</br><b>✦clone https://github.com/CyberTKR/CyberTK-Self</b>
+</br><b>✦git clone https://github.com/CyberTKR/CyberTK-Self</b>
 </br><b>✦install thrift==0.9.3</b>
 </br><b>✦install rsa</b>
 </br><b>✦install requests</b>

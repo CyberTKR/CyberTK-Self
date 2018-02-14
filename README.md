@@ -1,20 +1,20 @@
 # Commandlist;
-- pkg install python2 
-- pkg install git
-- git clone https://github.com/CyberTKR/CyberTK-Self
-- pip2 install thrift==0.9.3
-- pip2 install rsa
-- pip2 install requests
-- pip2 install goslate
-- pip2 install client
-- pip2 install wikipedia
-- pip2 install googletrans
-- pip2 install bs4
-- pip2 install gtts
-- pip2 install translate
-- pip2 install urllib3 
-- cd CyberTK-Self
-- python Self.py
+</br><b>✦pkg install python2 </b>
+</br><b>✦pkg install git</b>
+</br><b>✦clone https://github.com/CyberTKR/CyberTK-Self</b>
+</br><b>✦install thrift==0.9.3</b>
+</br><b>✦install rsa</b>
+</br><b>✦install requests</b>
+</br><b>✦install goslate</b>
+</br><b>✦install client</b>
+</br><b>✦install wikipedia</b>
+</br><b>✦install googletrans</b>
+</br><b>✦install bs4</b>
+</br><b>✦install gtts</b>
+</br><b>✦install translate</b>
+</br><b>✦install urllib3 </b>
+</br><b>✦cd CyberTK-Self</b>
+</br><b>✦python Self.py</b>
 
 <h1>.̶.͖̗̱̲͔̹͕̬͔͙̞͈̘̮͉́.̛͕̬͉̻͖͞͠.̟̬̩͖̠.̟̖̦͓͙̖͠..͇̭̼̼͇ͅ.̨͙̪̣̝̬̯͔͍͓̰̺̩̟̖.̹̥̘.͍̰̦̳̮͎̬͝.̸̲̤̗͓͈̜̦͓̪͓̯̘͔̹̰̀.̲̩͖̞̖̠̻̙̟͞.͡͡͠.̵̢͔̺͓̠̰̜̘͈̬͠.̨̹̳̪̮̯̜́̀ͅ.̡͕ͅ.̴͚̠̗̳̪͉̕ͅ.҉̖͙̣.̧̛̞̤̳͉͕͈̠̣͎̭͘.̴͔̙̮̺̖͉̤̙͚̟͔̘..̥̹̥̙̣̮̺̜̲̻̺̲̤͟͞.͘҉̜̘̳̫͖̩̮̠͕̻͇̰..̥͇̹͉̯̥̝̖̣̬̼͚ͅ.̰̱͕̟̰̙̳̮̜̹̰ͅ..̛̘͟͞ͅ.̥̞̥̻̣̮̮̭̤͈ͅ.̡̬̻̯͙̖̭͔̰͉̘͎̰́ͅ.͝.̶̶͉̪̬͖̯̱͍͓̞̘̰..̻̼͚̝.̠̩̲͍̮͇͖͠.̷̵̢̘̗̗̯̲͎.̨.̰̗͜͞.͔̪̠͔̹̫̟̰̪̝̥́́͡.͘͜.̛.͏͉͎͎͍͓̖̼͚̭͉.̻̱͈.̵̯̼͙͚͉̠̰͚̲́.̛̫͓͍̰̤̱̥̫̳̗̺̗̪̖͡.͇͉̳̹̩̮.̲̙͓̼.͇͔͠.̬̝.̢̺̞͟ͅ.̖͔̺̗̥̻̙̕͡.͘͝.̵̷̢̻̥̣͎ͅ.̷̬̱̻̫̩͚̳̪.͟.̖̻̫̠̠͖̩͕̼.̞̠̝̹̗̥̜̤̫̤͎̫͘ͅ.̧̻̙̙̹͉̹̠̬͙̭.̭̦̬̟̲͍̙͍͕̱̲̹.͜͞.̲̳͢͠.̹̪.͕͖͈̩͓̹.̵͇̹̘̘̭̲̱̟̗̘͈͡.̛͈͉..̸͏҉̪̘̦̗̮͔̲͉..͕.͚͕͖̩̳̲̟͈̝̩̦̮ͅ.̠͖̘͈ͅ.</h1>
 </br>

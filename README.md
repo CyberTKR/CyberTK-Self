@@ -2,17 +2,17 @@
 </br><b>✦pkg install python2 </b>
 </br><b>✦pkg install git</b>
 </br><b>✦git clone https://github.com/CyberTKR/CyberTK-Self</b>
-</br><b>✦install thrift==0.9.3</b>
-</br><b>✦install rsa</b>
-</br><b>✦install requests</b>
-</br><b>✦install goslate</b>
-</br><b>✦install client</b>
-</br><b>✦install wikipedia</b>
-</br><b>✦install googletrans</b>
-</br><b>✦install bs4</b>
-</br><b>✦install gtts</b>
-</br><b>✦install translate</b>
-</br><b>✦install urllib3 </b>
+</br><b>✦pip2 install thrift==0.9.3</b>
+</br><b>✦pip2 install rsa</b>
+</br><b>✦pip2 install requests</b>
+</br><b>✦pip2 install goslate</b>
+</br><b>✦pip2 install client</b>
+</br><b>✦pip2 install wikipedia</b>
+</br><b>✦pip2 install googletrans</b>
+</br><b>✦pip2 install bs4</b>
+</br><b>✦pip2 install gtts</b>
+</br><b>✦pip2 install translate</b>
+</br><b>✦pip2 install urllib3 </b>
 </br><b>✦cd CyberTK-Self</b>
 </br><b>✦python Self.py</b>
 

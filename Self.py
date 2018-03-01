@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 from threading import Thread
 
 cl = CYBERTK.LINE()
-cl.login(token="EpWCnwRdZj4wiIH1Gxxf./jzt0uU2F8Ka2CzBTu0uxW.rkuLfwgNL5VDC1bcypUEKuFaJ9uwg4k7voggBUp2yCA=")
+cl.login(token="EqRy5upFzY1NBVSLShd9.Mo5QJOEebLCYXUdx05aeUq.0EqEfawzb9E65jWS5fPPJA5pTdpdOk4ylqxRFflkvmE=")
 cl.loginResult()
 
 kc = kk = ki = kl = cl
@@ -331,8 +331,8 @@ Cmid = kc.getProfile().mid
 Dmid = kl.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
-admin=["u6a66b6b389d27052f7c8ac0bdc2cee7e"]
-creator=["u6a66b6b389d27052f7c8ac0bdc2cee7e"]
+admin=["u98ee6a8e8784065732c6e0d7d39004b9"]
+creator=["u98ee6a8e8784065732c6e0d7d39004b9"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -340,7 +340,22 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"Thanks For Add ☆ TK  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠Ȏ̾T Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆\n\n\Support By ~ ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ\n\n✯==== Creator ====✯\n\nhttp://line.me/ti/p/~cybertk0",
+    'message':"""💥🔥【тнanĸѕ ғor add мe】🔥💥
+                              😎
+                         🖕🏻👕👊🏻
+                              👖
+                              👢
+💥🔥AUTO ꧁꧂[̲̅B̲̅][̲̅O̲̅][̲̅T̲̅]꧁꧂ FRIEND🔥💥
+		
+		
+=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]==== ☆
+		
+Support By ~ ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ
+		
+✯==== Creator ====✯
+		
+http://line.me//ti/p/~cybertk0		
+""",
     "lang":"JP",
     "comment":"Thanks For Add ☆ TK  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̊̑̾͘T Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆\n\n\Support By ~ ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ\n\n✯==== Creator ====✯\n\nhttp://line.me/ti/p/~cybertk0",
     "commentOn":True,
@@ -690,19 +705,10 @@ def bot(op):
         if op.type == 5:
             if wait["autoAdd"] == True:
                 cl.findAndAddContactsByMid(op.param1)
-                ki.findAndAddContactsByMid(op.param1)
-                kc.findAndAddContactsByMid(op.param1)
-                kl.findAndAddContactsByMid(op.param1)
-                kk.findAndAddContactsByMid(op.param1)
-
                 if (wait["message"] in [""," ","\n",None]):
                     pass
                 else:
                     cl.sendText(op.param1,str(wait["message"]))
-                    ki.sendText(op.param1,str(wait["message"]))
-                    kc.sendText(op.param1,str(wait["message"]))
-                    kk.sendText(op.param1,str(wait["message"]))
-
 #------------------NOTIFIED_READ_MESSAGE----------------#
         if op.type == 55:
 	    try:
@@ -1202,7 +1208,7 @@ def bot(op):
 					msg.contentMetadata = {'mid': Bmid}
 					kk.sendMessage(msg)
 #--------------------------------------------------
-            elif msg.text in ["cancel","Bot cancel"]:
+            elif msg.text in ["Bot cancel"]:
 				if msg.from_ in admin:
 					if msg.toType == 2:
 						G = cl.getGroup(msg.to)
@@ -1219,6 +1225,13 @@ def bot(op):
 							cl.sendText(msg.to,"Can not be used outside the group")
 						else:
 							cl.sendText(msg.to,"Not for use less than group")
+            elif msg.text in ["cancel","B"]:
+                if msg.toType == 2:
+                    group = cl.getGroup(msg.to)
+                    gMembMids = [contact.mid for contact in group.invitee]
+                    for _mid in gMembMids:
+                        random.choice(KAC).cancelGroupInvitation(msg.to,[_mid])
+                    cl.sendText(msg.to,"Cancel invite Success")							
 #--------------------------------------------------
             #elif "gurl" == msg.text:
                 #print cl.getGroup(msg.to)

@@ -340,22 +340,7 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"""💥🔥【тнanĸѕ ғor add мe】🔥💥
-                              😎
-                         🖕🏻👕👊🏻
-                              👖
-                              👢
-💥🔥AUTO ꧁꧂[̲̅B̲̅][̲̅O̲̅][̲̅T̲̅]꧁꧂ FRIEND🔥💥
-		
-		
-=====[̴̘̤̫̼̗̯͎̲̈́͑͑̅̂͊͐̾͆ͥͮ͟͠C̼̟̭͓͚̮̝͙̲̞͇̻̦̟͔̫ͯ̿̅̈́ͬ͊̓ͦ͌̌͗̆ͮ͂̍̚]̣̅[҉̷͚͓̼͉̮̲̟̝̬̱̱͖̅ͩ̎̀̈́̋ͣ̂̋ͩͮ̉Ý̢̲͇͚̦̻̰̻ͫ̍ͮ̅]̨̃ͯͨ̂̋ͪ̅[̪̲̘̲ͣͯ̑̅̑̎B̧̡̘͇͚̹̖̣͎̼̖̫̲̦̪̹̺̠̰̓ͬ̿̅ͯ̓̾́̍͋ͤ̒͋̆̈́̽̅][̧̤̘̮̪̮̟̠̻̲̘̻̥̲̬̑̍͑̐̈̓̿̅̐͑̿ͬͮͫE̪̙͖̫̲̣̥͔̊͒̏͊̅ͦͯ̋]̠̖̭̳͇̑́̉̆͛[͇̩̘̖͕̝̖̱̲̌ͧ̉ͬ̅̃̀ͦ̎́̅ͫ̉̇ͬ̏͋͝Ŗ̛̱̜̭͔̻̼̦̲̅]͡[͔͓̳̪̟͔̲̤̮͙̅ͬͫ̌̊͑ͧ́ͪṬ̢͍͇̠̩̮̪͇͚̱̫̖̲͆͛ͧ̃̓̑̅̎̓ͦ̈́̊̿̎̋̉̑̍̓̌]͆̈́ͧ͛[̯͉̬͈̱̪̞̺̥̲̲͕̗̆́̀̅̎̊ͬͭͧ͌͌̔ͭ̀͌͞ͅK̨̦̣͉͍͚̳̗̫̘͉̲ͣ͗̄̅̚͞]==== ☆
-		
-Support By ~ ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ
-		
-✯==== Creator ====✯
-		
-http://line.me//ti/p/~cybertk0		
-""",
+    'message':"Thanks For Add ☆ TK  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠Ȏ̾T Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆\n\n\Support By ~ ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ\n\n✯==== Creator ====✯\n\nhttp://line.me/ti/p/~cybertk0",
     "lang":"JP",
     "comment":"Thanks For Add ☆ TK  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̊̑̾͘T Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆\n\n\Support By ~ ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ\n\n✯==== Creator ====✯\n\nhttp://line.me/ti/p/~cybertk0",
     "commentOn":True,
@@ -487,6 +472,23 @@ def _images_get_all_items(page):
             time.sleep(0.1)        #Timer could be used to slow down the request for image downloads
             page = page[end_content:]
     return items
+
+def autolike():
+			for zx in range(0,100):
+				hasil = cl.activity(limit=100)
+				if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
+					try:    
+						cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+						cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like By TobyBots!!\nID LINE : line://ti/p/~tobyg74\nIG : instagram.com/tobygaming74")
+						print "DiLike"
+					except:
+							pass
+				else:
+						print "Sudah DiLike"
+			time.sleep(500)
+thread2 = threading.Thread(target=autolike)
+thread2.daemon = True
+thread2.start()
 
 def yt(query):
     with requests.session() as s:
@@ -705,10 +707,19 @@ def bot(op):
         if op.type == 5:
             if wait["autoAdd"] == True:
                 cl.findAndAddContactsByMid(op.param1)
+                ki.findAndAddContactsByMid(op.param1)
+                kc.findAndAddContactsByMid(op.param1)
+                kl.findAndAddContactsByMid(op.param1)
+                kk.findAndAddContactsByMid(op.param1)
+
                 if (wait["message"] in [""," ","\n",None]):
                     pass
                 else:
                     cl.sendText(op.param1,str(wait["message"]))
+                    ki.sendText(op.param1,str(wait["message"]))
+                    kc.sendText(op.param1,str(wait["message"]))
+                    kk.sendText(op.param1,str(wait["message"]))
+
 #------------------NOTIFIED_READ_MESSAGE----------------#
         if op.type == 55:
 	    try:
@@ -1208,7 +1219,7 @@ def bot(op):
 					msg.contentMetadata = {'mid': Bmid}
 					kk.sendMessage(msg)
 #--------------------------------------------------
-            elif msg.text in ["Bot cancel"]:
+            elif msg.text in ["cancel","Bot cancel"]:
 				if msg.from_ in admin:
 					if msg.toType == 2:
 						G = cl.getGroup(msg.to)
@@ -1225,13 +1236,6 @@ def bot(op):
 							cl.sendText(msg.to,"Can not be used outside the group")
 						else:
 							cl.sendText(msg.to,"Not for use less than group")
-            elif msg.text in ["cancel","B"]:
-                if msg.toType == 2:
-                    group = cl.getGroup(msg.to)
-                    gMembMids = [contact.mid for contact in group.invitee]
-                    for _mid in gMembMids:
-                        random.choice(KAC).cancelGroupInvitation(msg.to,[_mid])
-                    cl.sendText(msg.to,"Cancel invite Success")							
 #--------------------------------------------------
             #elif "gurl" == msg.text:
                 #print cl.getGroup(msg.to)
@@ -2105,8 +2109,48 @@ def bot(op):
                     else:
                         cl.sendText(msg.to, "An already read point has not been set.\n¡¸set¡¹you can send 7¬8 read point will be created 7¬8")
 #-----------------------------------------------
-
-
+            elif msg.text in ["Tagall"]:
+                if msg.from_ in admin:
+                              group = cl.getGroup(msg.to)
+                              nama = [contact.mid for contact in group.members]
+                              nm1, nm2, nm3, nm4, jml = [], [], [], [], len(nama)
+                              if jml <= 100:
+                                 mention(msg.to, nama)
+                              if jml > 100 and jml < 200:
+                                 for i in range (0, 99):
+                                        nm1 += [nama[i]]
+                                 mention(msg.to, nm1)
+                                 for j in range (100, len(nama)-1):
+                                        nm2 += [nama[j]]
+                                 mention(msg.to, nm2)
+                              if jml > 200 and jml < 300:
+                                 for i in range (0, 99):
+                                        nm1 += [nama[i]]
+                                 mention(msg.to, nm1)
+                                 for j in range (100, 199):
+                                        nm2 += [nama[j]]
+                                 mention(msg.to, nm2)
+                                 for k in range (200, len(nama)-1):
+                                        nm3 += [nama[k]]
+                                 mention(msg.to, nm3)
+                              if jml > 300 and jml < 400:
+                                 for i in range (0, 99):
+                                        nm1 += [nama[i]]
+                                 mention(msg.to, nm1)
+                                 for j in range (100, 199):
+                                        nm2 += [nama[j]]
+                                 mention(msg.to, nm2)
+                                 for k in range (200, 299):
+                                        nm3 += [nama[k]]
+                                 mention(msg.to, nm3)
+                                 for l in range (300, len(nama)-1):
+                                     nm4 += [nama[l]]
+                                 mention(msg.to, nm4)
+                              cnt = Message()
+                              cnt.text = "Tag Member : "+str(jml)
+                              cnt.to = msg.to
+                              cl.sendText(msg.to,"Tag Only..")
+                              cl.sendMessage(cnt)
 #-----------------------------------------------
 
             elif msg.text in ["All join","Join"]:
@@ -2422,7 +2466,6 @@ def bot(op):
                     cl.sendText(msg.to,"UpdateName => " + string + " <= Success")
 #----------------------------
             elif "Vk " in msg.text:
-              if msg.from_ in admin:
                 key = eval(msg.contentMetadata["MENTION"])
                 key["MENTIONEES"][0]["M"]
                 targets = []
@@ -2441,7 +2484,7 @@ def bot(op):
 #-----------------------------------------------
             elif msg.text in ["Test"]:
 				if msg.from_ in admin:
-					cl.sendText(msg.to,"Yes Sir!!")
+					cl.sendText(msg.to,"🇹🇷")
 #-----------------------------------------------
             elif msg.text in ["Qr On","qr on"]:
               if msg.from_ in admin:
@@ -3389,14 +3432,14 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"Gambar Covernya")
                         cl.sendImageWithURL(msg.to,cover)
-#--------------------------CEK SIDER------------------------------
-
-            elif "/setview" in msg.text:
+#-------Cek sider biar mirip kek siri-----------------------------
+            elif "Setlastpoint" in msg.text:
                 subprocess.Popen("echo '' > dataSeen/"+msg.to+".txt", shell=True, stdout=subprocess.PIPE)
-                cl.sendText(msg.to, "Checkpoint checked!")
-                print "@setview"
-
-            elif "/viewseen" in msg.text:
+                #cl.sendText(msg.to, "Checkpoint checked!")
+                cl.sendText(msg.to, "Set the lastseens' point(｀・ω・´)\n\n" + datetime.now().strftime('%H:%M:%S'))
+                print "Setlastpoint"
+#--------------------------------------------
+            elif "Viewlastseen" in msg.text:
 	        lurkGroup = ""
 	        dataResult, timeSeen, contacts, userList, timelist, recheckData = [], [], [], [], [], []
                 with open('dataSeen/'+msg.to+'.txt','r') as rr:
@@ -3414,7 +3457,7 @@ def bot(op):
                     for ll in range(len(uL)):
                         try:
                             getIndexUser = userList.index(uL[ll])
-                            timeSeen.append(time.strftime("%H:%M:%S", time.localtime(int(timelist[getIndexUser]) / 1000)))
+                            timeSeen.append(time.strftime("%d日 %H:%M:%S", time.localtime(int(timelist[getIndexUser]) /1000)))
                             recheckData.append(userList[getIndexUser])
                         except IndexError:
                             conName.append('nones')
@@ -3424,13 +3467,13 @@ def bot(op):
                         dataResult.append(contactId[v].displayName + ' ('+timeSeen[v]+')')
                         pass
                     if len(dataResult) > 0:
-                        tukang = "List Viewer\n*"
-                        grp = '\n* '.join(str(f) for f in dataResult)
-                        total = '\n\nTotal %i viewers (%s)' % (len(dataResult), datetime.now().strftime('%H:%M:%S') )
-                        cl.sendText(msg.to, "%s %s %s" % (tukang, grp, total))
+                        grp = '\n• '.join(str(f) for f in dataResult)
+                        total = '\nThese %iuesrs have seen at the lastseen point(｀・ω・´)\n\n%s' % (len(dataResult), datetime.now().strftime('%H:%M:%S') )
+                        cl.sendText(msg.to, "• %s %s" % (grp, total))
                     else:
-                        cl.sendText(msg.to, "Belum ada viewers")
-                    print "@viewseen"
+                     cl.sendText(msg.to, "\nSetlastpoint\nViewlastseen")
+                    print "Viewlastseen"
+#===============================================
 #--------------------------CEK SIDER------------------------------                                      
             elif msg.from_ in mimic["target"] and mimic["status"] == True and mimic["target"][msg.from_] == True:
             	text = msg.text

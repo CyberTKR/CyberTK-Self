@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 from threading import Thread
 
 cl = CYBERTK.LINE()
-cl.login(token="EqRy5upFzY1NBVSLShd9.Mo5QJOEebLCYXUdx05aeUq.0EqEfawzb9E65jWS5fPPJA5pTdpdOk4ylqxRFflkvmE=")
+cl.login(token="EqYIBi9uCVKl0FLJXGV2.6iWaOPtj7ILp04/WiXYSOG.Q83X6l6TA0GhvwF1H3LMIjjEMTVt5V9PmUIgeBCrSs8=")
 cl.loginResult()
 
 kc = kk = ki = kl = cl
@@ -331,8 +331,8 @@ Cmid = kc.getProfile().mid
 Dmid = kl.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
-admin=["u98ee6a8e8784065732c6e0d7d39004b9"]
-creator=["u98ee6a8e8784065732c6e0d7d39004b9"]
+admin=["ue88c00a294c9ee294fd38fb0231caca2"]
+creator=["ue88c00a294c9ee294fd38fb0231caca2"]
 wait = {
     'contact':False,
     'autoJoin':True,

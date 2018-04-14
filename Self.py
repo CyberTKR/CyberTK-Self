@@ -18,8 +18,16 @@ from bs4 import BeautifulSoup
 from threading import Thread
 
 cl = CYBERTK.LINE()
-cl.login(token="Er8qhAVnyqvHR3gRHJdf.sR2MzIQamJipPgg7fZ3VtW.YQ9qLhrndt94NQW40Kv9MUxIJ8qH4O8V7MO6EWN7/08=")
+cl.login(token="Ero6Q92iUY9eTY4fuX0f.H37LYk2v0tba8asW9G323W.bZ8c6oj49D63H0O01f1CGk4cQPIcrf0j322mpeiv4pE=")
 cl.loginResult()
+
+#cybertk = CYBERTK.LINE()
+#cybertk.login(token="ErdyyKBdoDUthtdfN5t8.B+z/CDMzggwUKzZXmvXWsa.uH+jmfJzFpL+VfvKD/cytw0KEYtgBw0RJOIMdbyyxmM=")
+#cybertk.loginResult()
+
+#cybertk = CYBERTK.LINE()
+#cybertk.login(token="EreI8YYovJNse8T2ch7a.sXqhCpHf0bRi6jS0iLLyUG.qGfQZVEObEvEuGjC89SHnspSi9H3ff5jzLu/NnsF4sI=")
+#cybertk.loginResult()
 
 kc = kk = ki = kl = cl
 
@@ -329,15 +337,15 @@ Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Dmid = kl.getProfile().mid
+#Emid = cybertk.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
-admin=["u4abda6662a8032320fa461bb173def4f"]
-creator=["u4abda6662a8032320fa461bb173def4f"]
+admin=["u877ee5c8ad95d13040f004b0f60df6df"]
+creator=["u877ee5c8ad95d13040f004b0f60df6df"]
 wait = {
     'contact':False,
     'autoJoin':True,
     'autoCancel':{"on":True,"members":1},
-    'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
     'message':"""💥🔥【тнanĸѕ ғor add мe】🔥💥
@@ -376,7 +384,7 @@ https://forum.ayyildiz.org/uye/cybertk.293440/
 
 ⇩★ Line İletişim  ★⇩
 
-➤https://line.me//ti/p/~cybertk0
+➤https://line.me/ti/p/~cybertk0
 
 ⇩★ Twitter İletişim  ★⇩
 
@@ -396,11 +404,11 @@ https://forum.ayyildiz.org/uye/cybertk.293440/
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
-    "linkprotect":True,
-    "MProtection":True,
-    "Protectguest":True,
-    "Protectcancel":True,
-    "autoKick":True,
+    "linkprotect":False,
+    "MProtection":False,
+    "Protectguest":False,
+    "Protectcancel":False,
+    "autoKick":False,
     "tag":False,
     "tag2":False,
     "likeOn":False,
@@ -410,7 +418,7 @@ https://forum.ayyildiz.org/uye/cybertk.293440/
     "pnharfbot":{},
     "pname":{},
     "pro_name":{},
-    "protectionOn":True,
+    "protectionOn":False,
     "atjointicket":True
     }
 
@@ -442,6 +450,18 @@ backup = cl.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
+
+#contact = cybertk.getProfile()
+#mybackup = cybertk.getProfile()
+#mybackup.displayName = contact.displayName
+#mybackup.statusMessage = contact.statusMessage
+#mybackup.pictureStatus = contact.pictureStatus
+
+#contact = cybertk.getProfile()
+#backup = cybertk.getProfile()
+#backup.displayName = contact.displayName
+#backup.statusMessage = contact.statusMessage
+#backup.pictureStatus = contact.pictureStatus
 
 mulai = time.time()
 
@@ -538,7 +558,7 @@ def yt(query):
 def waktu(secs):
     mins, secs = divmod(secs,60)
     hours, mins = divmod(mins,60)
-    return '%02d Jam %02d Menit %02d Detik' % (hours, mins, secs)
+    return '%02d DK %02d & %02d Sn' % (hours, mins, secs)
 
 def upload_tempimage(client):
      '''
@@ -990,21 +1010,6 @@ def bot(op):
 		        else:
                             wait["blacklist"][op.param2] = True
 
-#------------------NOTIFIED_KICKOUT_FROM_GROUP-----------------
-
-
-        if op.type == 22:
-            if wait["leaveRoom"] == True:
-                cl.leaveRoom(op.param1)
-        if op.type == 24:
-            if wait["leaveRoom"] == True:
-                cl.leaveRoom(op.param1)
-        if op.type == 25:
-            msg = op.message
-#-----------------------------------------
-            if msg.toType == 1:
-                if wait["leaveRoom"] == True:
-                    cl.leaveRoom(msg.to)
             if msg.contentType == 16:
                 url = msg.contentMetadata("line://home/post?userMid="+mid+"&postId="+"new_post")
                 cl.like(url[25:58], url[66:], likeType=1001)
@@ -1715,13 +1720,13 @@ def bot(op):
 #--------------------------------------------------
             elif msg.text in ["Ã¥Â¼Â·Ã¥Ë†Â¶Ã¨â€¡ÂªÃ¥â 1�71¤7¹â 1�71¤7¢Ã©â‚¬â�1�7�¬Ã¥â�1�7�1�71¤7¡Â 1�71¤7:Ã£â€šÂªÃ£Æ�1�7�Â�1�7�1�71¤7","Leave on","Auto leave:on","Ã¥Â¼Â·Ã¥Ë†Â¶Ã¨â€¡ÂªÃ¥â 1�71¤7¹â 1�71¤7¢Ã©â‚¬â�1�7�¬Ã¥â�1�7�1�71¤7¡ÂºÃ¯Â¼Å¡Ã©â 1�71¤7“â�1�7�1�71¤7 1�71¤7"]:
 				if msg.from_ in admin:
-					if wait["leaveRoom"] == True:
+					if wait["leaveRoom"] == False:
 						if wait["lang"] == "JP":
 							cl.sendText(msg.to,"already on")
 						else:
 							cl.sendText(msg.to,"done")
 					else:
-						wait["leaveRoom"] = True
+						wait["leaveRoom"] = False
 						if wait["lang"] == "JP":
 							cl.sendText(msg.to,"done")
 						else:
@@ -1862,14 +1867,6 @@ def bot(op):
 						cl.sendText(msg.to,str(i) + "Deleted albums")
 					else:
 						cl.sendText(msg.to,str(i) + "Ã¥Ë 1�7 Ã©â„¢Â¤Ã¤Âºâ�1�7�1�71¤7 Ã¤Âºâ 1�71¤7¹Ã§Å¡â 1�71¤7žÃ§â 1�71¤7ºÂ¸Ã¥â 1�71¤7 Å’Ã£â�1�7�¬â€ 1�71¤7")
-            elif msg.text in ["Group id","Ã§Â¾Â¤Ã§Âµâ€žÃ¥â�1�7�1�71¤7¦Â¨id"]:
-				if msg.from_ in admin:
-					gid = cl.getGroupIdsJoined()
-					h = ""
-					for i in gid:
-						h += "[%s]:%s\n" % (cl.getGroup(i).name,i)
-					cl.sendText(msg.to,h)
-#--------------------------------------------------
             elif msg.text in ["Clear"]:
 				if msg.from_ in admin:
 					gid = cl.getGroupIdsInvited()
@@ -2160,14 +2157,14 @@ def bot(op):
 							G.preventJoinByTicket(G)
 							ki.updateGroup(G)
 
-            elif msg.text in ["1 join"]:
+            elif msg.text in ["Ghost join"]:
 				if msg.from_ in admin:
 					X = cl.getGroup(msg.to)
 					X.preventJoinByTicket = False
 					cl.updateGroup(X)
 					invsend = 0
 					Ti = cl.reissueGroupTicket(msg.to)
-					ki.acceptGroupInvitationByTicket(msg.to,Ti)
+					cybertk.acceptGroupInvitationByTicket(msg.to,Ti)
 					G = kk.getGroup(msg.to)
 					G.preventJoinByTicket = True
 					ki.updateGroup(G)
@@ -2211,12 +2208,12 @@ def bot(op):
 							kc.leaveGroup(msg.to)
 						except:
 							pass
-            elif msg.text in ["Bye 1"]:
+            elif msg.text in ["Ghost bye"]:
 				if msg.from_ in admin:
 					if msg.toType == 2:
 						ginfo = cl.getGroup(msg.to)
 						try:
-							ki.leaveGroup(msg.to)
+							cybertk.leaveGroup(msg.to)
 						except:
 							pass
             elif msg.text in ["Bye 2"]:
@@ -2463,12 +2460,67 @@ def bot(op):
                       cl.kickoutFromGroup(msg.to,[target])
                    except:
                       pass
-#-----------------------------------------------
-            elif msg.text.lower() == 'crsh':
+										
+#======================================== 
+            elif "Ghostkick " in msg.text:
+              if msg.from_ in admin:
+                nk0 = msg.text.replace("Ghostkick ","")
+                nk1 = nk0.lstrip()
+                nk2 = nk1.replace("@","")
+                nk3 = nk2.rstrip()
+                _name = nk3
+                gs = cl.getGroup(msg.to)
+                ginfo = cl.getGroup(msg.to)
+                gs.preventJoinByTicket = False
+                cl.updateGroup(gs)
+                invsend = 0
+                Ticket = cl.reissueGroupTicket(msg.to)
+                cybertk.acceptGroupInvitationByTicket(msg.to,Ticket)
+                time.sleep(0.01)
+                targets = []
+                for s in gs.members:
+                    if _name in s.displayName:
+                       targets.append(s.mid)
+                if targets == []:
+                   sendMessage(msg.to,"user does not exist")
+                   pass
+                else:
+                   for target in targets:
+                      try:
+                        cybertk.kickoutFromGroup(msg.to,[target])
+                        print (msg.to,[g.mid])
+                      except:
+                        cybertk.leaveGroup(msg.to)
+                        gs = cl.getGroup(msg.to)
+                        gs.preventJoinByTicket = True
+                        cl.updateGroup(gs)
+                        gs.preventJoinByTicket(gs)
+                        cl.updateGroup(gs)
+            #========⤴Music Done⤴=========#
+            elif msg.text.lower() == 'TK2':
+              if msg.from_ in admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "ua7fb5762d5066629323d113e1266e8ca',"}
+                msg.contentMetadata = {'mid': "u6a66b6b389d27052f7c8ac0bdc2cee7e',"}
                 cl.sendMessage(msg)
-#-----------------------------------------------
+								
+            elif msg.text in ["Attack"]:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': "u6a66b6b389d27052f7c8ac0bdc2cee7e',"}
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+                ki.sendMessage(msg)
+#-----------------=============================  
             elif msg.text in ["Test"]:
 				if msg.from_ in admin:
 					cl.sendText(msg.to,"Yes Sir!!")
@@ -2534,11 +2586,11 @@ def bot(op):
             elif msg.text in ["/Creator"]:
 					msg.contentType = 13
 					msg.contentMetadata = {'mid': "u6a66b6b389d27052f7c8ac0bdc2cee7e"}
-					cl.sendText(msg.to,"MyCreator")
+					cl.sendText(msg.to,"MyCreator")
 					ki.sendMessage(msg)
 					msg.contentType = 13
 					msg.contentMetadata = {'mid': "u6a66b6b389d27052f7c8ac0bdc2cee7e"}
-					kk.sendText(msg.to,"MyCreator")
+					kk.sendText(msg.to,"MyCreator")
 					ki.sendText(msg.to,"ya!!")
 					ki.sendMessage(msg)
 #-------------Fungsi Creator Finish-----------------#
@@ -2693,18 +2745,27 @@ def bot(op):
                     t = cl.getAllContactIds()
                     for manusia in t:
                         cl.sendText(manusia, (bctxt))
-#----------------------------------------------------------
-            elif "Meikarta: " in msg.text:
-                if msg.from_ in creator:
-                    gid = msg.text.replace("Meikarta: ","")
+#-------------------System Genel Fınısh--------------------------------                   
+            elif "Invite: " in msg.text:
+                if msg.from_ in admin:
+                    gid = msg.text.replace("Invite: ","")
                     if gid == "":
                         cl.sendText(msg.to,"Invalid group id")
                     else:
                         try:
-                            cl.findAndAddContactsByMid(msg.from_)
-                            cl.inviteIntoGroup(gid,[msg.from_])
+                            cybertk.findAndAddContactsByMid(msg.from_)
+                            cybertk.inviteIntoGroup(gid,[msg.from_])
                         except:
-                            cl.sendText(msg.to,"Mungkin saya tidak di dalaam grup itu")
+                            cybertk.sendText(msg.to,"Error..!")
+														
+#-------------------Group list idl--------------------------------
+            elif msg.text.lower() == 'group id':
+              if msg.from_ in admin:
+                gid = cybertk.getGroupIdsJoined()
+                h = ""
+                for i in gid:
+                    h += "[%s]:%s\n" % (cybertk.getGroup(i).name,i)
+                cybertk.sendText(msg.to,h)
 #------------------------------------------------------
             elif "Getcover @" in msg.text:            
                 print "[Command]dp executing"
@@ -2815,11 +2876,11 @@ def bot(op):
                         cl.sendText(msg.to,"already oғғ")
 #--------------------------
             elif msg.text in ["Nleave on"]:
-                if wait["Lv"] == True:
+                if wait["Lv"] == False:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"noтιғ leave on")
                 else:
-                    wait["Lv"] = True
+                    wait["Lv"] = False
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"already on")
             elif msg.text in ["Nleave off"]:
@@ -2954,11 +3015,6 @@ def bot(op):
                          if '&List' not in a['href']:
                              cl.sendText(msg.to,'Judul : ' + a['title'] + '\nLink : ' + 'http://www.youtube.com' + a['href'])
 #---------------------------------
-#-----------------------------------------
-            elif msg.text.lower() == 'runtime':
-                eltime = time.time() - mulai
-                van = "Bot is Running Time "+waktu(eltime)
-                cl.sendText(msg.to,van)
 #-----------------------------------------
             elif msg.text in ["Restart"]:
                 cl.sendText(msg.to, "Bot has been restarted")
@@ -3170,12 +3226,87 @@ def bot(op):
                       cl.sendText(msg.to,"Succes Banned")
                    except:
                       pass
-#-----------------------------------------------
-            elif "Kapan " in msg.text:
-                tanya = msg.text.replace("Kapan ","")
-                jawab = ("")
-                jawaban = random.choice(jawab)
-                cl.sendText(msg.to,jawaban)
+#-------------Fungsi Tag All Start---------------#
+            elif msg.text in ["Cipok","Tag"]:
+                  group = cl.getGroup(msg.to)
+                  nama = [contact.mid for contact in group.members]
+
+                  cb = ""
+                  cb2 = ""
+                  strt = int(0)
+                  akh = int(0)
+                  for md in nama:
+                      akh = akh + int(6)
+
+                      cb += """{"S":"""+json.dumps(str(strt))+""","E":"""+json.dumps(str(akh))+""","M":"""+json.dumps(md)+"},"""
+
+                      strt = strt + int(7)
+                      akh = akh + 1
+                      cb2 += "@nrik \n"
+
+                  cb = (cb[:int(len(cb)-1)])
+                  msg.contentType = 0
+                  msg.text = cb2
+                  msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+cb+']}','EMTVER':'4'}
+
+                  try:
+                      ki.sendMessage(msg)
+                  except Exception as error:
+                      print error
+                      
+            elif msg.text in ["Tagall"]:
+                if msg.from_ in admin:
+                              group = cl.getGroup(msg.to)
+                              nama = [contact.mid for contact in group.members]
+                              nm1, nm2, nm3, nm4, jml = [], [], [], [], len(nama)
+                              if jml <= 100:
+                                 mention(msg.to, nama)
+                              if jml > 100 and jml < 200:
+                                 for i in range (0, 99):
+                                        nm1 += [nama[i]]
+                                 mention(msg.to, nm1)
+                                 for j in range (100, len(nama)-1):
+                                        nm2 += [nama[j]]
+                                 mention(msg.to, nm2)
+                              if jml > 200 and jml < 300:
+                                 for i in range (0, 99):
+                                        nm1 += [nama[i]]
+                                 mention(msg.to, nm1)
+                                 for j in range (100, 199):
+                                        nm2 += [nama[j]]
+                                 mention(msg.to, nm2)
+                                 for k in range (200, len(nama)-1):
+                                        nm3 += [nama[k]]
+                                 mention(msg.to, nm3)
+                              if jml > 300 and jml < 400:
+                                 for i in range (0, 99):
+                                        nm1 += [nama[i]]
+                                 mention(msg.to, nm1)
+                                 for j in range (100, 199):
+                                        nm2 += [nama[j]]
+                                 mention(msg.to, nm2)
+                                 for k in range (200, 299):
+                                        nm3 += [nama[k]]
+                                 mention(msg.to, nm3)
+                                 for l in range (300, len(nama)-1):
+                                     nm4 += [nama[l]]
+                                 mention(msg.to, nm4)
+                              cnt = Message()
+                              cnt.text = "Tag Member : "+str(jml)
+                              cnt.to = msg.to
+                              cl.sendText(msg.to,"Tag Only..")
+                              cl.sendMessage(cnt)
+#-------------Fungsi Tag All Finish---------------#
+            elif msg.text in ["Rejectall"]:
+				if msg.from_ in admin:
+					gid = cl.getGroupIdsInvited()
+					for i in gid:
+						cl.rejectGroupInvitation(i)
+					if wait["lang"] == "JP":
+						cl.sendText(msg.to,"All invitations have been refused")
+					else:
+						cl.sendText(msg.to,"Ã¦â€¹â�1�7�1�71¤7™Ã§Â»ÂÃ¤Âºâ�1�7�1�71¤7 Ã¥â 1�71¤7¦Â¨Ã©Æ’Â¨Ã§Å¡â�1�7�1�71¤7žÃ©â 1�71¤7šâ‚¬Ã¨Â¯Â·Ã£â�1�7�¬â�1�7�1�71¤7 1�71¤7")
+#--------------------------------------------------
 #-----------------------------------------------
             elif "Mycopy @" in msg.text:
                 if msg.toType == 2:
@@ -3223,6 +3354,87 @@ def bot(op):
                 rst = hasil + ", " + inihari.strftime('%d') + " - " + blan + " - " + inihari.strftime('%Y') + "\nJam : [ " + inihari.strftime('%H:%M:%S') + " ]"
                 client.sendText(msg.to, rst)
 #-----------------------------------------------
+            elif ("Play " in msg.text):
+                   targets = []
+                   key = eval(msg.contentMetadata["MENTION"])
+                   key["MENTIONEES"] [0] ["M"]
+                   for x in key["MENTIONEES"]:
+                       targets.append(x["M"])
+                   for target in targets:
+                       try:
+                           cl.kickoutFromGroup(msg.to,[target])
+                           cl.inviteIntoGroup(msg.to,[target])
+                           cl.cancelGroupInvitation(msg.to,[target])
+                           cl.inviteIntoGroup(msg.to,[target])
+                           cl.cancelGroupInvitation(msg.to,[target])
+                           cl.inviteIntoGroup(msg.to,[target])
+                           cl.cancelGroupInvitation(msg.to,[target])
+                           cl.inviteIntoGroup(msg.to,[target])
+                           cl.cancelGroupInvitation(msg.to,[target])
+                           cl.inviteIntoGroup(msg.to,[target])
+                           cl.cancelGroupInvitation(msg.to,[target])
+                       except:
+                           cl.sendText(msg.to,"Error")
+#-----------------------------------------------
+            elif ("Ghostoyna " in msg.text):
+                   targets = []
+                   key = eval(msg.contentMetadata["MENTION"])
+                   key["MENTIONEES"] [0] ["M"]
+                   for x in key["MENTIONEES"]:
+                       targets.append(x["M"])
+                   for target in targets:
+                       try:
+                           cybertk.kickoutFromGroup(msg.to,[target])
+                           cybertk.inviteIntoGroup(msg.to,[target])
+                           cybertk.cancelGroupInvitation(msg.to,[target])
+                           cybertk.inviteIntoGroup(msg.to,[target])
+                           cybertk.cancelGroupInvitation(msg.to,[target])
+                           cybertk.inviteIntoGroup(msg.to,[target])
+                           cybertk.cancelGroupInvitation(msg.to,[target])
+                           cybertk.inviteIntoGroup(msg.to,[target])
+                           cybertk.cancelGroupInvitation(msg.to,[target])
+                           cybertk.inviteIntoGroup(msg.to,[target])
+                           cybertk.cancelGroupInvitation(msg.to,[target])
+                           cybertk.inviteIntoGroup(msg.to,[target])
+                       except:
+                           cl.sendText(msg.to,"Error")
+													
+            elif msg.text in ["hız"]:
+                start = time.time()
+                cl.sendText(msg.to, "Access time Waiting...")
+                elapsed_time = time.time() - start
+                cl.sendText(msg.to, "%s<==CyberTK Server" % (elapsed_time))
+                cl.sendText(msg.to, "%s<==CyberTK Server" % (elapsed_time))
+                cl.sendText(msg.to, "%s<==CyberTK Server" % (elapsed_time))
+#===============================================											
+#===============================================
+            elif ".speed" in msg.text:
+                time.sleep(0.5)
+                cl.sendText(msg.to, "Access time Waiting...")
+                start = time.time()
+                time.sleep(2.32)
+                elapsed_time = time.time() - start
+                cl.sendText(msg.to, "%sseconds" % (elapsed_time))     	
+                print "[Command]Speed palsu executed"            				
+            elif "zzz" in msg.text:
+                cl.sendText(msg.to, "Access time Waiting...")
+                start = time.time()
+                time.sleep(0.02)
+                elapsed_time = time.time() - start
+                cl.sendText(msg.to, "%s<==Server \n\n\n [͍̜̤͎̖̺̥͍͎̼̥͓͎̪͖̤͕͎̲̥͍̜͓͕ͧ̔ͣ̌͒̅C̗̘̮̩̺̠͕̤̲͋ͭ̋ͦ͛̐͋̅͊]̞͚̱̹̞̯̠̣̱͚̺̿ͪͣͦ͊̊̈́̌ͤ̆̚[̰̞̼̯͉̻͈̹͉͕̬͇̤̺̣̞̲̪̻̺̲͇̯̯̜̲̅̇́͒ͩ̌̏̆ͩ̾ͧ̄̿ͯ̄̏̏ͅy͎̰̥̰̠̖̰͚͎̫͍̲̤̮̠̪̲̭̺̖͖̝̜̰̲̯̜ͣ̂ͩ̐ͫ̉͑̌̒ͤ̀̃̋̾͗̅͊̆ͫ̊ͣ̉͗̈ͥ̆ͫ]̳̝͍̞̫̼͙̼ͨ̋͐͛ͦͭ̇̚[̯̣͉̥̻̩̭͙̘̙͙̪̖̩͎̼̰̜̲̻̗̰̦̩̜͇̪̞̺͇̻̳̥̗͊ͫ̓̈́ͯ̈ͮ̅ͮͤ̊ͥ̊͌̐̈̈ͧ̅͛̍̿̿̅͐ͬͫ̑̇́́̅͋̚b͚̭͍̖̲͈͋͌͒ͦ̆͑̊̿̄ͭ̅̐][̲ͥ̑̂ͫ̏̋̾͌ͦ̌̅̊̅̓́́ͨ͌e̜̗̮͎̘̮̱̲̖̽̊͋̇͊ͭ̅̉ͯ][͍͙̞̞͚͙̭̬̫̳͕̜̹̭̮̲̤͈̹̺̹̤̳͂̈̏ͨͧ̅ͯ̓̆ͭ̽͒̿̐̈ͣͥ̌ͦ̔ͫ͑̊̀ͅr͕̟͓̖̫̭̥͉̙̱͉̻̺̲͕̬͓̬͓̘͑̿͊̆̈́́́̊̊̅̿̎͋ͤ̈́ͣ̅̒̽̚]̄̋̀ ̞̠̫͔̜[̳̬̯̮̻̪̳̝̻͉̮͓̻̖̤̼̺͖̲̙̰̟̲̩̳̹̘̺̱̪̑̏́ͦ̃̎ͦͭ̂ͮͯ̊̅̾̂͆̂ͩ͌̈́̆͆̚̚ͅT̲̻̖̞͈͍͎͔͚̙̙̭̅ͦ̐͒ͩͩͣͮ̎͑͛͑̏ͦͩ̓̔̓̃̀ͧ̚]̣͎̯̘̜͉̗̠͍̰̐̊͗̉̊̒̍̽̚̚[̼̲͍̪̲͉̙̩̙̅̓͂̋̑ͦ̃͋̀͆ͅK̲̲͉̫̱̲̫͕̞͈͈͖̹̠̞͈ͭ̓̉͋̄̅͂͂̔ͬͤ̂̅ͬ̐ͯ̓̀̉̽ͪͯ̆͆̌͆̇ͧ]̩̠͈̪̝̳̪̜͖̜͙" % (elapsed_time))
+                cl.sendText(msg.to, "%s<==Server \n\n\n[͍̜̤͎̖̺̥͍͎̼̥͓͎̪͖̤͕͎̲̥͍̜͓͕ͧ̔ͣ̌͒̅C̗̘̮̩̺̠͕̤̲͋ͭ̋ͦ͛̐͋̅͊]̞͚̱̹̞̯̠̣̱͚̺̿ͪͣͦ͊̊̈́̌ͤ̆̚[̰̞̼̯͉̻͈̹͉͕̬͇̤̺̣̞̲̪̻̺̲͇̯̯̜̲̅̇́͒ͩ̌̏̆ͩ̾ͧ̄̿ͯ̄̏̏ͅy͎̰̥̰̠̖̰͚͎̫͍̲̤̮̠̪̲̭̺̖͖̝̜̰̲̯̜ͣ̂ͩ̐ͫ̉͑̌̒ͤ̀̃̋̾͗̅͊̆ͫ̊ͣ̉͗̈ͥ̆ͫ]̳̝͍̞̫̼͙̼ͨ̋͐͛ͦͭ̇̚[̯̣͉̥̻̩̭͙̘̙͙̪̖̩͎̼̰̜̲̻̗̰̦̩̜͇̪̞̺͇̻̳̥̗͊ͫ̓̈́ͯ̈ͮ̅ͮͤ̊ͥ̊͌̐̈̈ͧ̅͛̍̿̿̅͐ͬͫ̑̇́́̅͋̚b͚̭͍̖̲͈͋͌͒ͦ̆͑̊̿̄ͭ̅̐][̲ͥ̑̂ͫ̏̋̾͌ͦ̌̅̊̅̓́́ͨ͌e̜̗̮͎̘̮̱̲̖̽̊͋̇͊ͭ̅̉ͯ][͍͙̞̞͚͙̭̬̫̳͕̜̹̭̮̲̤͈̹̺̹̤̳͂̈̏ͨͧ̅ͯ̓̆ͭ̽͒̿̐̈ͣͥ̌ͦ̔ͫ͑̊̀ͅr͕̟͓̖̫̭̥͉̙̱͉̻̺̲͕̬͓̬͓̘͑̿͊̆̈́́́̊̊̅̿̎͋ͤ̈́ͣ̅̒̽̚]̄̋̀ ̞̠̫͔̜[̳̬̯̮̻̪̳̝̻͉̮͓̻̖̤̼̺͖̲̙̰̟̲̩̳̹̘̺̱̪̑̏́ͦ̃̎ͦͭ̂ͮͯ̊̅̾̂͆̂ͩ͌̈́̆͆̚̚ͅT̲̻̖̞͈͍͎͔͚̙̙̭̅ͦ̐͒ͩͩͣͮ̎͑͛͑̏ͦͩ̓̔̓̃̀ͧ̚]̣͎̯̘̜͉̗̠͍̰̐̊͗̉̊̒̍̽̚̚[̼̲͍̪̲͉̙̩̙̅̓͂̋̑ͦ̃͋̀͆ͅK̲̲͉̫̱̲̫͕̞͈͈͖̹̠̞͈ͭ̓̉͋̄̅͂͂̔ͬͤ̂̅ͬ̐ͯ̓̀̉̽ͪͯ̆͆̌͆̇ͧ]̩̠͈̪̝̳̪̜͖̜͙" % (elapsed_time))
+                cl.sendText(msg.to, "%s<==Server \n\n\n[͍̜̤͎̖̺̥͍͎̼̥͓͎̪͖̤͕͎̲̥͍̜͓͕ͧ̔ͣ̌͒̅C̗̘̮̩̺̠͕̤̲͋ͭ̋ͦ͛̐͋̅͊]̞͚̱̹̞̯̠̣̱͚̺̿ͪͣͦ͊̊̈́̌ͤ̆̚[̰̞̼̯͉̻͈̹͉͕̬͇̤̺̣̞̲̪̻̺̲͇̯̯̜̲̅̇́͒ͩ̌̏̆ͩ̾ͧ̄̿ͯ̄̏̏ͅy͎̰̥̰̠̖̰͚͎̫͍̲̤̮̠̪̲̭̺̖͖̝̜̰̲̯̜ͣ̂ͩ̐ͫ̉͑̌̒ͤ̀̃̋̾͗̅͊̆ͫ̊ͣ̉͗̈ͥ̆ͫ]̳̝͍̞̫̼͙̼ͨ̋͐͛ͦͭ̇̚[̯̣͉̥̻̩̭͙̘̙͙̪̖̩͎̼̰̜̲̻̗̰̦̩̜͇̪̞̺͇̻̳̥̗͊ͫ̓̈́ͯ̈ͮ̅ͮͤ̊ͥ̊͌̐̈̈ͧ̅͛̍̿̿̅͐ͬͫ̑̇́́̅͋̚b͚̭͍̖̲͈͋͌͒ͦ̆͑̊̿̄ͭ̅̐][̲ͥ̑̂ͫ̏̋̾͌ͦ̌̅̊̅̓́́ͨ͌e̜̗̮͎̘̮̱̲̖̽̊͋̇͊ͭ̅̉ͯ][͍͙̞̞͚͙̭̬̫̳͕̜̹̭̮̲̤͈̹̺̹̤̳͂̈̏ͨͧ̅ͯ̓̆ͭ̽͒̿̐̈ͣͥ̌ͦ̔ͫ͑̊̀ͅr͕̟͓̖̫̭̥͉̙̱͉̻̺̲͕̬͓̬͓̘͑̿͊̆̈́́́̊̊̅̿̎͋ͤ̈́ͣ̅̒̽̚]̄̋̀ ̞̠̫͔̜[̳̬̯̮̻̪̳̝̻͉̮͓̻̖̤̼̺͖̲̙̰̟̲̩̳̹̘̺̱̪̑̏́ͦ̃̎ͦͭ̂ͮͯ̊̅̾̂͆̂ͩ͌̈́̆͆̚̚ͅT̲̻̖̞͈͍͎͔͚̙̙̭̅ͦ̐͒ͩͩͣͮ̎͑͛͑̏ͦͩ̓̔̓̃̀ͧ̚]̣͎̯̘̜͉̗̠͍̰̐̊͗̉̊̒̍̽̚̚[̼̲͍̪̲͉̙̩̙̅̓͂̋̑ͦ̃͋̀͆ͅK̲̲͉̫̱̲̫͕̞͈͈͖̹̠̞͈ͭ̓̉͋̄̅͂͂̔ͬͤ̂̅ͬ̐ͯ̓̀̉̽ͪͯ̆͆̌͆̇ͧ]̩̠͈̪̝̳̪̜͖̜͙" % (elapsed_time))
+                cl.sendText(msg.to, "%s<==Server \n\n\n[͍̜̤͎̖̺̥͍͎̼̥͓͎̪͖̤͕͎̲̥͍̜͓͕ͧ̔ͣ̌͒̅C̗̘̮̩̺̠͕̤̲͋ͭ̋ͦ͛̐͋̅͊]̞͚̱̹̞̯̠̣̱͚̺̿ͪͣͦ͊̊̈́̌ͤ̆̚[̰̞̼̯͉̻͈̹͉͕̬͇̤̺̣̞̲̪̻̺̲͇̯̯̜̲̅̇́͒ͩ̌̏̆ͩ̾ͧ̄̿ͯ̄̏̏ͅy͎̰̥̰̠̖̰͚͎̫͍̲̤̮̠̪̲̭̺̖͖̝̜̰̲̯̜ͣ̂ͩ̐ͫ̉͑̌̒ͤ̀̃̋̾͗̅͊̆ͫ̊ͣ̉͗̈ͥ̆ͫ]̳̝͍̞̫̼͙̼ͨ̋͐͛ͦͭ̇̚[̯̣͉̥̻̩̭͙̘̙͙̪̖̩͎̼̰̜̲̻̗̰̦̩̜͇̪̞̺͇̻̳̥̗͊ͫ̓̈́ͯ̈ͮ̅ͮͤ̊ͥ̊͌̐̈̈ͧ̅͛̍̿̿̅͐ͬͫ̑̇́́̅͋̚b͚̭͍̖̲͈͋͌͒ͦ̆͑̊̿̄ͭ̅̐][̲ͥ̑̂ͫ̏̋̾͌ͦ̌̅̊̅̓́́ͨ͌e̜̗̮͎̘̮̱̲̖̽̊͋̇͊ͭ̅̉ͯ][͍͙̞̞͚͙̭̬̫̳͕̜̹̭̮̲̤͈̹̺̹̤̳͂̈̏ͨͧ̅ͯ̓̆ͭ̽͒̿̐̈ͣͥ̌ͦ̔ͫ͑̊̀ͅr͕̟͓̖̫̭̥͉̙̱͉̻̺̲͕̬͓̬͓̘͑̿͊̆̈́́́̊̊̅̿̎͋ͤ̈́ͣ̅̒̽̚]̄̋̀ ̞̠̫͔̜[̳̬̯̮̻̪̳̝̻͉̮͓̻̖̤̼̺͖̲̙̰̟̲̩̳̹̘̺̱̪̑̏́ͦ̃̎ͦͭ̂ͮͯ̊̅̾̂͆̂ͩ͌̈́̆͆̚̚ͅT̲̻̖̞͈͍͎͔͚̙̙̭̅ͦ̐͒ͩͩͣͮ̎͑͛͑̏ͦͩ̓̔̓̃̀ͧ̚]̣͎̯̘̜͉̗̠͍̰̐̊͗̉̊̒̍̽̚̚[̼̲͍̪̲͉̙̩̙̅̓͂̋̑ͦ̃͋̀͆ͅK̲̲͉̫̱̲̫͕̞͈͈͖̹̠̞͈ͭ̓̉͋̄̅͂͂̔ͬͤ̂̅ͬ̐ͯ̓̀̉̽ͪͯ̆͆̌͆̇ͧ]̩̠͈̪̝̳̪̜͖̜͙" % (elapsed_time))
+                print "[Command]Speed palsu executed"
+#========================================
+            elif msg.text.lower() == 'cancel':
+                if msg.toType == 2:
+                    group = cl.getGroup(msg.to)
+                    gMembMids = [contact.mid for contact in group.invitee]
+                    for _mid in gMembMids:
+                        cl.cancelGroupInvitation(msg.to,[_mid])
+                    cl.sendText(msg.to,"I pretended to cancel and canceled👈")
+										
             elif "image " in msg.text:
                 search = msg.text.replace("image ","")
                 url = 'https://www.google.com/search?espv=2&biw=1366&bih=667&tbm=isch&oq=kuc&aqs=mobile-gws-lite.0.0l5&q=' + search
@@ -3235,6 +3447,57 @@ def bot(op):
                     cl.sendImageWithURL(msg.to,path)
                 except:
                     pass
+									
+#--------------------------------------------------------		
+            elif msg.text in ["Friendlist"]:    
+                contactlist = cl.getAllContactIds()
+                kontak = cl.getContacts(contactlist)
+                num=1
+                msgs="═════════List Friend═════════"
+                for ids in kontak:
+                    msgs+="\n[%i] %s" % (num, ids.displayName)
+                    num=(num+1)
+                msgs+="\n═════════List Friend═════════\n\nTotal Friend : %i" % len(kontak)
+                cl.sendText(msg.to, msgs)
+
+            elif msg.text in ["Memlist"]:   
+                kontak = cl.getGroup(msg.to)
+                group = kontak.members
+                num=1
+                msgs="═════════List Member════════-"
+                for ids in group:
+                    msgs+="\n[%i] %s" % (num, ids.displayName)
+                    num=(num+1)
+                msgs+="\n═════════List Member═════════\n\nTotal Members : %i" % len(group)
+                ki.sendText(msg.to, msgs)
+
+            elif msg.text in ["Friendlistmid"]: 
+                gruplist = cl.getAllContactIds()
+                kontak = cl.getContacts(gruplist)
+                num=1
+                msgs="═════════List FriendMid═════════"
+                for ids in kontak:
+                    msgs+="\n[%i] %s" % (num, ids.mid)
+                    num=(num+1)
+                msgs+="\n═════════List FriendMid═════════\n\nTotal Friend : %i" % len(kontak)
+                cl.sendText(msg.to, msgs)
+					
+            elif msg.text in ["Gruplistmid"]:   
+                gruplist = cl.getGroupIdsJoined()
+                kontak = cl.getGroups(gruplist)
+                num=1
+                msgs="═════════List GrupMid═════════"
+                for ids in kontak:
+                    msgs+="\n[%i] %s" % (num, ids.id)
+                    num=(num+1)
+                msgs+="\n═════════List GrupMid═════════\n\nTotal Grup : %i" % len(kontak)
+                cl.sendText(msg.to, msgs)
+								
+            elif msg.text.lower() == 'runtime':
+                ki.sendText(msg.to,"「Please wait..」\nType  :Loading...\nStatus : Loading...")
+                eltime = time.time() - mulai
+                van = "Type : Bot \nStatus : Aktif \nMybot Aktif Seconds\n"+waktu(eltime)
+                cl.sendText(msg.to,van)
 #-----------------------------------------------
             elif 'ig ' in msg.text.lower():
                 try:
@@ -3614,9 +3877,7 @@ def bot(op):
                   _name = msg.text.replace("/botadd @","")
                   _nametarget = _name.rstrip('  ')
                   gs = cl.getGroup(msg.to)
-                  gs = ki.getGroup(msg.to)
-                  gs = kk.getGroup(msg.to)
-                  gs = kc.getGroup(msg.to)
+                  gs = cybertk.getGroup(msg.to)
                   targets = []
                   for g in gs.members:
                     if _nametarget == g.displayName:
@@ -3627,16 +3888,18 @@ def bot(op):
                     for target in targets:
                       try:
                         cl.findAndAddContactsByMid(target)
-                        ki.findAndAddContactsByMid(target)
-                        kk.findAndAddContactsByMid(target)
-                        kc.findAndAddContactsByMid(target)
-                        cl.senText(msg.to, "")
+                        cybertk.findAndAddContactsByMid(target)
+                        cl.senText(msg.to, "Bot added")
                       except:
                         cl.sendText(msg.to,"Error")
               else:
                 cl.sendText(msg.to,"!")
                 cl.sendText(msg.to,"!")
-		
+#-----------------------------------------------
+            elif msg.text in ["TK","Respon"]:
+				if msg.from_ in admin:
+					cl.sendText(msg.to, "🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷🇹🇷")
+#-------------------------------------------------
             elif "Getmid @" in msg.text:
                 if msg.from_ in admin:
                   _name = msg.text.replace("Getmid @","")
@@ -3657,11 +3920,13 @@ def bot(op):
 #--------------------------------------------------------
             elif msg.text in ["Sp","iletişim",".sp"]:
 				if msg.from_ in admin:
-					cl.sendText(msg.to, """m💥🔥【тнanĸѕ ғor add мe】🔥💥
-                              😎
-                         🖕🏻👕👊🏻
-                              👖
-                              👢
+					cl.sendText(msg.to, """╔══╗ 
+║██║ 
+║(O)║♫ ♪ ♫ ♪
+╚══╝
+▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █
+Min- - - - - - - - - - - -●Max
+
 💥🔥AUTO ꧁꧂[̲̅B̲̅][̲̅O̲̅][̲̅T̲̅]꧁꧂ FRIEND🔥💥
 		
 		
@@ -3679,9 +3944,9 @@ https://cybertk-blog.wixsite.com/cybe...
 
 ⇩★ THT & AYTİletişim Gerekli konulara erişim ★⇩
 
-https://turkhackteam.org/private.php?do=newpm&u=816181
+➤https://turkhackteam.org/private.php?do=newpm&u=816181
 
-https://forum.ayyildiz.org/uye/cybertk.293440/
+➤https://forum.ayyildiz.org/uye/cybertk.293440/
 
 ⇩★ Mail İletişim ★⇩
 

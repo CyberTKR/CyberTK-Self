@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 #Vipro Bot
 
-import CYBERTK
-from CYBERTK.lib.curve.ttypes import *
+import LINETCR
+from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 from bs4 import BeautifulSoup
 from threading import Thread
@@ -10,7 +10,7 @@ from googletrans import Translator
 from gtts import gTTS
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
-vipro = CYBERTK.LINE()
+vipro = LINETCR.LINE()
 #vipro.login(qr=True)
 vipro.login(token='Es9wkO29opijDsGsvyi1.he7ptQiLNaEacZ4J4m+4uq.1p1CMaC9N8H2sZ/+mw5KG+c1SskK3cJBBK0tOb3o61w=')
 vipro.loginResult()

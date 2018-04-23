@@ -1,3 +1,4 @@
+<center>
 <h1>[̲̅C̲̅][̲̅o̲̅][̲̅m̲̅][̲̅m̲̅][̲̅a̲̅][̲̅n̲̅][̲̅d̲̅][̲̅l̲̅][̲̅i̲̅][̲̅s̲̅][̲̅t̲̅][̲̅;̲̅]</h1>
 </br><b>✦pkg install python2 </b>
 </br><b>✦pkg install git</b>
@@ -50,3 +51,4 @@
 </br><b>✦<a href="mailto:tolgajames2@gmail.com">On the Mail Icon below.↴⇩<b> </a> 	
 </br><a href="mailto:tolgajames2@gmail.com"> <img src="https://github.com/CyberTKR/CyberJS/blob/master/CyberJS/curve-thrift/mail.png" width=100/> </a>
  </html>
+</center>

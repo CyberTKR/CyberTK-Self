@@ -17,7 +17,7 @@
 </br><b>✦cd CyberTK-Self</b>
 </br><b>✦python Self.py</b>
 
-<div align="center"><a href="https://tr.cooltext.com"><img src="https://images.cooltext.com/5135666.gif" width="576" height="104" alt="Cyber TK" /></div>
+<div align="center"><a href="https://instagram.com/_aquariusman"><img src="https://images.cooltext.com/5135666.gif" width="576" height="104" alt="Cyber TK" /></div>
 </br>
 <h1>[̲̅C̲̅][̲̅y̲̅][̲̅b̲̅][̲̅e̲̅][̲̅r̲̅] [̲̅T̲̅][̲̅K̲̅] [̲̅B̲̅][̲̅o̲̅][̲̅t̲̅] [̲̅C̲̅][̲̅o̲̅][̲̅n̲̅][̲̅t̲̅][̲̅r̲̅][̲̅o̲̅][̲̅l̲̅]</h1>
 </br>

@@ -21,14 +21,6 @@ cl = CYBERTK.LINE()
 cl.login(token="Ero6Q92iUY9eTY4fuX0f.H37LYk2v0tba8asW9G323W.bZ8c6oj49D63H0O01f1CGk4cQPIcrf0j322mpeiv4pE=")
 cl.loginResult()
 
-#cybertk = CYBERTK.LINE()
-#cybertk.login(token="ErdyyKBdoDUthtdfN5t8.B+z/CDMzggwUKzZXmvXWsa.uH+jmfJzFpL+VfvKD/cytw0KEYtgBw0RJOIMdbyyxmM=")
-#cybertk.loginResult()
-
-#cybertk = CYBERTK.LINE()
-#cybertk.login(token="EreI8YYovJNse8T2ch7a.sXqhCpHf0bRi6jS0iLLyUG.qGfQZVEObEvEuGjC89SHnspSi9H3ff5jzLu/NnsF4sI=")
-#cybertk.loginResult()
-
 kc = kk = ki = kl = cl
 
 print """

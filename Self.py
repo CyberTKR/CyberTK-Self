@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#this is very good .py code and with good coding..
 
 import CYBERTK
 import goslate
